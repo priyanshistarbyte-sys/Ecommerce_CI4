@@ -1,0 +1,15 @@
+To fix "No direct script access allowed" error:
+
+1. Open your Apache httpd.conf file (usually in C:\xampp\apache\conf\httpd.conf)
+
+2. Find this line and uncomment it (remove the #):
+   #LoadModule rewrite_module modules/mod_rewrite.so
+   
+   Should become:
+   LoadModule rewrite_module modules/mod_rewrite.so
+
+3. Find all instances of "AllowOverride None" and change to "AllowOverride All"
+
+4. Restart Apache
+
+5. Access: http://localhost/Ecommerce_CI4/public/
