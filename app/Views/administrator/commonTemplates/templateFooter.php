@@ -5,7 +5,7 @@
     <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
         <div class="mb-2 mb-md-0">
             ©2023, made with ❤️ by
-            <a href="<?= base_url(); ?>" target="_blank" class="footer-link fw-bolder">BlixMart</a>
+            <a href="<?= base_url(); ?>" target="_blank" class="footer-link fw-bolder">WlixMart</a>
         </div>
         <div>
             <a href="mailto:admin@ecommerce.com" class="footer-link me-4" target="_blank">admin@ecommerce.com</a>

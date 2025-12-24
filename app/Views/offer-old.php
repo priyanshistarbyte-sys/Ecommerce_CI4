@@ -37,10 +37,10 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="d-block w-100" src="https://images.meesho.com/images/marketing/1705665922742_600.webp" alt="First slide">
+                                        <img class="d-block w-100" src="<?php echo base_url('assets/website/images/Artboard(1).webp'); ?>" alt="First slide">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="https://images.meesho.com/images/marketing/1705664942315_600.webp" alt="Second slide">
+                                        <img class="d-block w-100" src="<?php echo base_url('assets/website/images/Artboard(2).webp'); ?>" alt="Second slide">
                                     </div>
                                     <!-- <div class="carousel-item">
                                         <img class="d-block w-100" src="https://rukminim2.flixcart.com/fk-p-flap/720/320/image/208c09e2dcc27a6d.jpg?q=60" alt="Third slide">
@@ -74,7 +74,7 @@
         </div>
     </div>
 </nav> -->
-<img src="https://images.meesho.com/images/widgets/OY6J5/xwgyl_800.webp" alt="" class="w-100 mb-2">
+<img src="<?php echo base_url('assets/website/images/banner.png'); ?>" alt="" class="w-100 mb-2">
 
 <!-- <div color="white" class="sc-bcXHqe eCQLMa">
     <div class="sc-bcXHqe fctQgp OfferTimerSubtitle__StyledSubtitleContainer-sc-9svgo6-0 JgdIi OfferTimerSubtitle__StyledSubtitleContainer-sc-9svgo6-0 JgdIi" color="white">
@@ -94,7 +94,13 @@
         </div>
     </div>
 </div> -->
- <?php include(APPPATH . 'Views/common_template/ads.php'); ?>
+<!-- Banner Ad -->
+                <div id="banner-ad" style="height: 250px; text-align: center; margin: 20px 0"></div>
+                <script>
+                    googletag.cmd.push(() => {
+                        googletag.display("banner-ad");
+                    });
+                </script>
 <div class="products" id="products">
     <h4 font-size="21px" font-weight="book" color="greyBase" class="sc-gswNZR wDrko">Products For You</h4>
     <div class="product-list">

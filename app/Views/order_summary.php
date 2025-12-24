@@ -57,7 +57,13 @@
             </ul>
         </div>
     </div>
-     <?php include(APPPATH . 'Views/common_template/ads.php'); ?>
+    <!-- Banner Ad -->
+    <div id="banner-ad" style="height: 250px; text-align: center; margin: 20px 0"></div>
+    <script>
+        googletag.cmd.push(() => {
+            googletag.display("banner-ad");
+        });
+    </script>
     <div class="text-center mb-4">
         <h2 class="text-success">Order Confirmed!</h2>
         <p class="text-muted">Your order has been successfully placed</p>

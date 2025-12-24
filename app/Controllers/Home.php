@@ -84,8 +84,8 @@ class Home extends BaseController
             $remain_percentage = ($product_details['selling_price'] * 100) / $mrp;
             $offer_percentage  = round(100 - $remain_percentage);
 
-            $html .= '<a href="' . base_url('product/' . md5($product_details['id'])) . '" 
-                class="product-card" data-id="' . $product_details['id'] . '">
+            $html .= '<div class="product-card" data-url="' . base_url('product/' . md5($product_details['id'])) . '" 
+                data-id="' . $product_details['id'] . '" onclick="showRewardedAdForProduct(this.dataset.url)" style="cursor: pointer;">
                 <div class="product-img">
                     <img src="' . $product_details['img1'] . '" alt="">
                 </div>
@@ -98,7 +98,7 @@ class Home extends BaseController
                     </div>
                     <p class="free-delivery">Free Delivery</p>
                 </div>
-            </a>';
+            </div>';
         }
 
         // Return JSON response

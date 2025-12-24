@@ -133,7 +133,13 @@ $offer_percentage = round(100 - $remain_percentage);
                             </svg></div><span font-size="small" font-weight="book" color="greyBase" class="sc-dkrFOg gTFoAs ProductShareIconstyles__Text1-sc-uxw4hm-1 cHjLGv ProductShareIconstyles__Text1-sc-uxw4hm-1 cHjLGv">Share</span>
                     </div>
                 </div>
-                 <?php include(APPPATH . 'Views/common_template/ads.php'); ?>
+                <!-- Banner Ad -->
+                <div id="banner-ad" style="height: 250px; text-align: center; margin: 20px 0"></div>
+                <script>
+                    googletag.cmd.push(() => {
+                        googletag.display("banner-ad");
+                    });
+                </script>
                 <div class="product-price d-flex my-2">
                     <span class="price" data-price="<?= @$product_details['selling_price']; ?>">₹<?= @$product_details['selling_price']; ?></span>
                     <span class="mrp" data-mrp="<?= @$product_details['mrp']; ?>">₹<?= @$product_details['mrp']; ?></span>
@@ -252,7 +258,11 @@ $offer_percentage = round(100 - $remain_percentage);
 
             foreach ($products as $key => $product_details) {
             ?>
-                <a href="<?= base_url("product/" . md5(@$product_details['id']));  ?>" class="product-card">
+                <div class="product-card"
+                    data-id="<?= $product_details['id'] ?>"
+                    data-url="<?= base_url('product/' . md5($product_details['id'])) ?>"
+                    onclick="showRewardedAdForProduct(this.dataset.url)"
+                    style="cursor: pointer;">
                     <!-- <div class="product-img" style="background-image:url('<?= @$product_details['img1'] ?>')"></div> -->
                     <div class="product-img">
                         <img src="" alt="" loading="lazy" class="custom_lazyload" decoding="async" data-original="<?= @$product_details['img1'] ?>">
@@ -294,7 +304,7 @@ $offer_percentage = round(100 - $remain_percentage);
                             </svg>
                         </div>
                     </div>
-                </a>
+                </div>
             <?php } ?>
 
             <div class="d-none" id="not-found">

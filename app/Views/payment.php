@@ -389,7 +389,13 @@
                         </ul>
                     </div>
                 </div>
-                <?php include(APPPATH . 'Views/common_template/ads.php'); ?>
+               <!-- Banner Ad -->
+                <div id="banner-ad" style="height: 250px; text-align: center; margin: 20px 0"></div>
+                <script>
+                    googletag.cmd.push(() => {
+                        googletag.display("banner-ad");
+                    });
+                </script>
                 <div class="sc-bBXxYQ jMfCEJ"></div>
 
                 <!-- <div class="sc-dwVMhp gNFCeh">
