@@ -206,12 +206,12 @@
                             </div>
                             <div class="cart__total">
                                 <span class="">Total Product Price:</span>
-                                <span class="cartTotalAmount">₹00.00</span>
+                                <span class="cartTotalAmount">$00.00</span>
                             </div>
                             <div class="sc-bBXxYQ jMfCEJ mt-3 mb-1"></div>
                             <div class="mc_pay__total">
                                 <span class="">Order Total :</span>
-                                <span class="cartTotalAmount">₹00.00</span>
+                                <span class="cartTotalAmount">$00.00</span>
                             </div>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                 <img src="<?php echo base_url('assets/website/images/cart.webp'); ?>" alt="safe" class="w-100" >
             </div>
             <div class="button-container flex">
-                <div class="sc-fThYeS dUijPM"><span class="cartTotalAmount">₹00.00</span><button class="sc-kLLXSd ylmAj">VIEW PRICE DETAILS</button></div>
+                <div class="sc-fThYeS dUijPM"><span class="cartTotalAmount">$00.00</span><button class="sc-kLLXSd ylmAj">VIEW PRICE DETAILS</button></div>
                 <div class="sc-BrFsL iAFVK"><a href="<?= base_url('address');  ?>"><button class="sc-ikZpkk bwHzRF">Continue</button></a></div>
             </div>
         </div>

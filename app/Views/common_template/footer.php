@@ -45,7 +45,7 @@
                             <div class="cart__breakup__inner">
                                 <div class="cart__total">
                                     <span class="">Cart Total:</span>
-                                    <span class="cartTotalAmount">₹00.00</span>
+                                    <span class="cartTotalAmount">$00.00</span>
                                 </div>
                                 <div class="shipping__total" style="border-bottom: 1px dashed #000;">
                                     <span class="">Shipping:</span>
@@ -53,13 +53,13 @@
                                 </div>
                                 <div class="mc_pay__total">
                                     <span class="">To Pay:</span>
-                                    <span class="cartTotalAmount">₹00.00</span>
+                                    <span class="cartTotalAmount">$00.00</span>
                                 </div>
                             </div>
                         </div>
                         <div class="cart__checkout">
                             <div class="cart__final__payment">
-                                <h2 class="cart__final__price cartTotalAmount">₹00.00</h2>
+                                <h2 class="cart__final__price cartTotalAmount">$00.00</h2>
                                 <p class="cart__tax__text">Inclusive of all taxes</p>
                             </div>
                             <a href="<?= base_url("cart"); ?>" class="btn btn-dark cart__confirm__order">Confirm Order</a>
@@ -122,8 +122,8 @@
                                                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Group_1_93145e45-8530-46aa-9fb8-6768cc3d80d2.png?v=1633783107" class="remove-cart-item" data-index="' + products[index]['index'] + '" alt="">\
                                             </div>\
                                             <div class="cart-product-pricing">\
-                                                <p class="cart-product-price">₹' + products[index]['price'] + '</p>&nbsp;\
-                                                <span class="cart-product-mrp">₹' + products[index]['mrp'] + '</span>\
+                                                <p class="cart-product-price">$' + products[index]['price'] + '</p>&nbsp;\
+                                                <span class="cart-product-mrp">$' + products[index]['mrp'] + '</span>\
                                             </div>\
                                             <div class="cart-product-description">\
                                                 <p class="cart-product-color">Size :' + products[index]['size'] + '</p>\
@@ -154,7 +154,7 @@
 
                         if (cartTotalAmount > 0) {
                             $(".cart__footer").show();
-                            $(".cartTotalAmount").html("₹" + cartTotalAmount.toFixed(2));
+                            $(".cartTotalAmount").html("$" + cartTotalAmount.toFixed(2));
 
                         } else {
                             $(".cart__footer").hide();

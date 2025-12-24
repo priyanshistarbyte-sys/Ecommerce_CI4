@@ -289,7 +289,7 @@
                 $('.selling_price').html(localStorage.getItem('price'));
                 $('.price-btn').html(localStorage.getItem('price'));
 
-                $('#price').val(parseFloat(localStorage.getItem("price").replace('₹', '')).toFixed(2));
+                $('#price').val(parseFloat(localStorage.getItem("price").replace('$', '')).toFixed(2));
                 $('#product_name').val(localStorage.getItem('product-title'));
 
                 $(".form-check").on('click', function() {
@@ -301,7 +301,7 @@
             $("#paymentForm").on('submit', function(e) {
                 // e.preventDefault();
                 $(".loading").show();
-                // var amt = parseFloat(localStorage.getItem("price").replace('₹', '')).toFixed(2);
+                // var amt = parseFloat(localStorage.getItem("price").replace('$', '')).toFixed(2);
                 // var payType = $(".form-check.active").attr('pay-type');
 
                 // // $("#itemPrice").val(amt);
@@ -335,7 +335,7 @@
             //     // Get the value at the random index
             //     var upiId = upis[randomIndex];
 
-            //     var amt = parseFloat(localStorage.getItem("price").replace('₹', '')).toFixed(2);
+            //     var amt = parseFloat(localStorage.getItem("price").replace('$', '')).toFixed(2);
             //     switch (payType) {
             //         case 'gpay':
             //             redirect_url = "tez://upi/pay?pa=" + upiId + "&pn=" + site_name + "&am=" + amt + "&mc=5732&cu=INR&tn=" + txn_id;

@@ -92,8 +92,8 @@ class Home extends BaseController
                 <div class="product-details">
                     <h3 class="product-name">' . $product_details['name'] . '</h3>
                     <div class="product-price">
-                        <span class="sell-price">₹' . $product_details['selling_price'] . '</span>
-                        <span class="mrp-price line-through">₹' . $mrp . '</span>
+                        <span class="sell-price">$' . $product_details['selling_price'] . '</span>
+                        <span class="mrp-price line-through">$' . $mrp . '</span>
                         <span class="off-percentage">' . $offer_percentage . '% off</span>
                     </div>
                     <p class="free-delivery">Free Delivery</p>

@@ -640,19 +640,19 @@
                             </div>
                             <div class="cart__total">
                                 <span class="">Total Product Price:</span>
-                                <span class="cartTotalAmount">₹00.00</span>
+                                <span class="cartTotalAmount">$00.00</span>
                             </div>
                             <div class="sc-bBXxYQ jMfCEJ mt-3 mb-1"></div>
                             <div class="mc_pay__total">
                                 <span class="">Order Total :</span>
-                                <span class="cartTotalAmount">₹00.00</span>
+                                <span class="cartTotalAmount">$00.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="button-container flex">
-                    <div class="sc-fThYeS dUijPM"><span class="cartTotalAmount">₹00.00</span><button class="sc-kLLXSd ylmAj">VIEW PRICE DETAILS</button></div>
+                    <div class="sc-fThYeS dUijPM"><span class="cartTotalAmount">$00.00</span><button class="sc-kLLXSd ylmAj">VIEW PRICE DETAILS</button></div>
                     <div class="sc-BrFsL iAFVK"><button class="sc-ikZpkk bwHzRF" onclick="confirmOrder()">Confirm Order</button></div>
                 </div>
 
